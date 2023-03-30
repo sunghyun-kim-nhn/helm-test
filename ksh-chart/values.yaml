@@ -82,3 +82,4 @@ tolerations: []
 affinity: {}
 
 testValues: "test"
+testNamespace: "ksh-test"

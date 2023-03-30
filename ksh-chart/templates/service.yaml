@@ -4,6 +4,7 @@ metadata:
   name: {{ include "ksh-chart.fullname" . }}
   labels:
     {{- include "ksh-chart.labels" . | nindent 4 }}
+  namespace:  {{ .Values.testNamespace }}
 spec:
   type: {{ .Values.service.type }}
   ports:
